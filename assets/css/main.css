@@ -1,3 +1,64 @@
-header {
-    background-color: #201e1e;
+/* Styles for the header */
+*{  
+    margin: 0;
+    box-sizing: border-box;
 }
+body{
+    background-color: #27282B;
+    font-family: roboto, sans-serif;
+    color: #eBEBEB;
+}
+
+header {
+    background-color: #201E1E; /* Background color for the header */
+    color: #EBEBEB; /* Text color for the header */
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  /* Styles for the image container */
+  .image-container {
+    margin-right: 100px;
+  }
+  
+  .image-container img {
+    display: block;
+    width: 35px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+  }
+  
+  /* Styles for the navigation bar */
+  .nav-bar ul {
+    list-style: none; /* Remove bullet points from the list */
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end; /* Align the links to the flex-end */
+  }
+  
+  .nav-bar li {
+    margin-right: 20px; /* Adjust the margin as needed */
+  }
+  
+  .nav-bar a {
+    white-space: nowrap;
+
+
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff; /* Text color for links */
+    font-weight: bold; /* Add font weight to make links bold */
+  }
+  
+  /* Change link color on hover */
+  .nav-bar a:hover {
+    color: #55EC20; /* Change the link color on hover */
+  }
+
+  @media only screen and (max-width: 400px) {
+    .nav-bar a {
+        font-size: 3dvw;
+    }
+  }
+    
