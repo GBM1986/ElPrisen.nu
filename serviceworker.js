@@ -1,4 +1,11 @@
+const staticCacheName = 'site-static-v1.2'
 
+const assets = [
+    "/",
+    "/index.html",
+    "/css/styles.css",
+    "/pages/fallback.html"
+]
 
 // Install Service Worker
 self.addEventListener('install', event => {
