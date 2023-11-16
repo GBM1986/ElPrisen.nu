@@ -56,7 +56,13 @@ header {
     color: #55EC20; /* Change the link color on hover */
 }
 
-.lige-nu-main svg{
+.lige-nu-main {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    
+}
+ svg{
     float: right;
     padding-top: 5px;
     padding-right: 20px;
@@ -65,16 +71,15 @@ header {
     cursor: pointer;
 }
 
-.lige-nu-main svg a path{
+svg a path{
     fill:#55ec20
 }
 
 .elprisenNu{
     position: absolute;
-    margin-top: 120px;
-    Height: 53px;
-    width: 277px;
-    margin-left: 48px;
+    top:
+    justify-content: center;
+    align-items: center;
 }
 
 .elprisenNu h1{
@@ -86,54 +91,53 @@ header {
     text-align: center;
 }
 
-.ellipse {
-    position: relative;
-    top: 0;
-    left: 0;
-}
+
 
 .ellipse {
-    position: relative;
-    top: 0;
-    left: 0;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-1 {
     position: absolute;
-    width: 277px;
-    height: 277px;
-    top: 227px;
-    left: 48px;
-    border: 8px;
-
+    justify-content: center;
+    align-items: center;
 }
 
 .image-2 {
     position: absolute;
-    Width:244px;
-    Height:244px;
-    Top:243px;
-    Left:65px;
-    Border:1px;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-3 {
     position: absolute;
-    width: 217px;
-    height: 217px;
-    top: 257px;
-    left: 78px;
-    border: 1px;
-
+    justify-content: center;
+    align-items: center;
 }
 
 #currentPrice{
     position: absolute;
-    width: 164px;
-    height: 50px;
-    top: 340px;
-    left: 105px;
+    justify-content: center;
+    align-items: center;
+}
 
+footer {
+    background-color: #201E1E;
+    position:absolute;
+    bottom:0;
+    padding: 20px;
+    width: 100%;
+}
+
+footer p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #EBEBEB;
 }
 
   @media only screen and (max-width: 400px) {
