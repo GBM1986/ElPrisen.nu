@@ -77,51 +77,72 @@ svg a path{
 
 .elprisenNu{
     position: absolute;
-    top:
+    top:5px;
     justify-content: center;
     align-items: center;
 }
 
-.elprisenNu h1{
+h1{
     font-family: Roboto;
     font-size: 32px;
     font-weight: 300;
     line-height: 38px;
     letter-spacing: 0em;
     text-align: center;
+    margin-top: 100px;
 }
 
 
+.ring-one{
+    margin: auto;
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    border: 4px solid #363535;
+    background-color: #201E1E;
+    color: #55ec20;
+    z-index: 997;
+    margin-top: 80px;
+}
 
-.ellipse {
-    position: absolute;
+.ring-two{
+    margin: auto;
+    height: 220px;
+    width: 220px;
+    border-radius: 100%;
+    border: 1px dashed #55ec20;
+    z-index: 998;
+    margin-top: 6%;
+}
+
+.ring-three{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: auto;
+    border-radius: 100%;
+    height: 190px;
+    width: 190px;
+    z-index: 999;
+    margin-top: 6%;
+    border: 1px dashed #55ec20;
 }
 
-.image-1 {
-    position: absolute;
-    justify-content: center;
-    align-items: center;
+.ring-one h3 {
+    margin-bottom: 0;
 }
 
-.image-2 {
-    position: absolute;
-    justify-content: center;
-    align-items: center;
+.ring-one h4 {
+    margin-top: 0;
 }
 
-.image-3 {
-    position: absolute;
-    justify-content: center;
-    align-items: center;
+#currentTime {
+    color: #55ec20;
+    text-align: center;
+    margin-top: 20px;
 }
 
-#currentPrice{
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-}
 
 footer {
     background-color: #201E1E;

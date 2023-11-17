@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="manifest" href="./manifest.json">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <script src="./serviceworker.js"></script>
+    <script src="assets/js/ligenu.js" defer></script>
     <script src="assets/js/main.js" defer></script>
     <title>Elprisen</title>
 </head>
@@ -21,8 +22,8 @@
         <nav class="nav-bar">
             <ul>
                 <li><a href="#">OVERSIGT</a></li>
-                <li><a href="#">LIGE NU</a></li>
-                <li><a href="#">HISTORIK</a></li>
+                <li><a href="index.html">LIGE NU</a></li>
+                <li><a href="historik.html">HISTORIK</a></li>
             </ul>
         </nav>
     </header>
@@ -33,20 +34,25 @@
         </a>
     </svg>
 
+    
+    <h1>ELPRISEN LIGE NU</h1>
     <section class="lige-nu-main">
         
 
-        <div class="elprisenNu">
-            <h1>ELPRISEN LIGE NU</h1>
-        </div>  
-        <div class="ellipse">
-            <img class="image-1" src="assets/appIcons/Ellipse 1.png" alt="">
-            <img class="image-2" src="assets/appIcons/Ellipse 2.png" alt="">
-            <img class="image-3" src="assets/appIcons/Ellipse 3.png" alt="">
-                <div id="currentPrice">0.242 KR</div>
+        
+        
+        
+        <div class="ring-one">
+            <div class="ring-two">
+                <div class="ring-three">
+                    <p id="currentPrice"></p>
+                    <h4>PR.KWH</h4>
+                </div>
+            </div>
         </div>
+        
     </section>
-
+    <p id="currentTime"></p>
     <footer>
         <p>Priserne er <span style="color: #55ec20;">ex. moms</span> og afgifter
             Du vises lige nu priserne for <span style="color: #55ec20;">Øst Danmark</span></p>
