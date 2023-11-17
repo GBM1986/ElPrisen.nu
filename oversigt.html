@@ -12,7 +12,7 @@
     <script src="assets/js/ligenu.js" defer></script>
     <script src="assets/js/main.js" defer></script>
     <script src="assets/js/historik.js" defer></script>
-    <title>Historik</title>
+    <title>Oversigt</title>
 </head>
 <body>
     <header>
@@ -22,7 +22,7 @@
         
         <nav class="nav-bar">
             <ul>
-                <li><a href="#">OVERSIGT</a></li>
+                <li><a href="oversigt.html">OVERSIGT</a></li>
                 <li><a href="index.html">LIGE NU</a></li>
                 <li><a href="historik.html">HISTORIK</a></li>
             </ul>
@@ -35,26 +35,22 @@
         </a>
     </svg>
 
-    <h1>HISTORIK</h1>
+    <h1>OVERSIGT</h1>
 
-    <div class="container">
-        
-
-        <label for="datePicker"></label>
-        <input type="date" id="datePicker">
-
-        <h2>Elpriserne </h2>
-        <div id="priceHistory"></div>
-
-        <p>Current Date: <span id="currentDate"></span></p>
-        <p><span id="selectedDate"></span></p>
-    </div>
-
-    
-
-    <footer>
-        <p>Priserne er <span style="color: #55ec20;">ex. moms</span> og afgifter
-            Du vises lige nu priserne for <span style="color: #55ec20;">Øst Danmark</span></p>
-    </footer>
+    <section class="ring-wrapper">
+        <div class="ring">
+            <div class="ring-two">
+                <p id="low-price"></p>
+                <p style="font-size: 0.8rem;">PR. KWH</p>
+            </div>
+            <p class="undertekst">LAVESTE PRIS</p>
+        </div>
+        <div class="ring-three">
+                <div class="ring-four">
+                    <p id="high-price"></p>
+                    <p style="font-size: 0.8rem;">PR. KWH</p>
+                </div>
+            <p class="undertekst">HØJESTE PRIS</p>
+        </div>
 </body>
 </html>
