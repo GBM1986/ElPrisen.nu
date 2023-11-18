@@ -53,12 +53,6 @@ header {
     color: #55EC20; /* Change the link color on hover */
 }
 
-.lige-nu-main {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    
-}
 svg{
     float: right;
     margin-top: 30px;
@@ -83,14 +77,13 @@ h1{
 
 .ring-wrapper {
    display: flex;
-   gap: 2px;
 }
 
 .ring {
     margin: auto;
     height: 140px;
     width: 140px;
-    border-radius: 100%;
+    border-radius: 50%;
     border: 4px solid #363535;
     background-color: #201E1E;
     color:#EBEBEB;
@@ -103,9 +96,9 @@ h1{
     margin: auto;
     height: 120px;
     width: 120px;
-    border-radius: 100%;
+    border-radius: 50%;
     border: 1px dashed #55ec20;
-    margin-top: 6%;
+    margin-top: 6px;
     justify-content: center;
     align-items: center;
 }
@@ -126,10 +119,9 @@ h1{
     margin: auto;
     height: 120px;
     width: 120px;
-    border-radius: 100%;
+    border-radius: 50%;
     border: 1px dashed #55ec20;
-    z-index: 996;
-    margin-top: 6%;
+    margin-top: 6px;
     justify-content: center;
     align-items: center;
 }
@@ -137,7 +129,7 @@ h1{
 .pristext {
     text-align: center;
     margin-top: 30px;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 h2 {
