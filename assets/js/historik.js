@@ -24,8 +24,11 @@ function displayData(selectedDate, data) {
     const next24HoursData = data.filter(interval => new Date(interval.time_start).getTime() <= new Date().getTime() + 24 * 60 * 60 * 1000);
 
     document.getElementById("priceHistory").innerHTML = '';
-    document.getElementById("currentDate").textContent = selectedDate.toLocaleDateString("en-US");
-    document.getElementById("selectedDate").textContent = selectedDate.toLocaleDateString("en-US");
+    document.getElementById("currentDate").textContent = selectedDate.toLocaleDateString("da-DK");
+    document.getElementById("selectedDate").textContent = selectedDate.toLocaleDateString("da-DK");
+
+    const selectedDateDisplayed = document.getElementById("selectedDateDisplayed");
+    selectedDateDisplayed.textContent = selectedDate.toLocaleDateString("da-DK");
 
     next24HoursData.forEach(interval => {
         const startTime = new Date(interval.time_start);
@@ -34,11 +37,37 @@ function displayData(selectedDate, data) {
         const historyDiv = document.createElement("div");
         historyDiv.classList.add("priceInterval");
 
-        historyDiv.innerHTML = `<p>Time: ${timeStr}</p><p>Price: ${interval.DKK_per_kWh.toFixed(3)} kr</p>`;
+        const price = interval.DKK_per_kWh.toFixed(3);
+        const color = getPriceColor(price);
+
+        historyDiv.innerHTML = `<p>kl. ${timeStr}</p><p style="color: ${color}">${price} kr</p>`;
 
         document.getElementById("priceHistory").appendChild(historyDiv);
     });
 }
+
+function getPriceColor(price) {
+    if (price <= 0.192) {
+        return "#00FF29";
+    } else if (price <= 0.283) {
+        return "#33FF00";
+    } else if (price <= 0.343) {
+        return "#B8FF22";
+    } else if (price <= 0.434) {
+        return "#EDFF23";
+    } else if (price <= 0.524) {
+        return "#FFD645";
+    } else if (price <= 0.543) {
+        return "#FF7A00";
+    } else if (price <= 0.653) {
+        return "#FF8717";
+    } else if (price <= 0.7) {
+        return "#FF4D00";
+    } else {
+        return "#FF0000"; // Additional color for prices over 0.7
+    }
+}
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const currentDate = new Date();

@@ -63,10 +63,8 @@ header {
 }
  svg{
     float: right;
-    padding-top: 5px;
-    padding-right: 20px;
-    width: 35px;
-    height: 35px;
+    margin-top: 30px;
+    margin-right: 30px;
     cursor: pointer;
 }
 
@@ -74,13 +72,7 @@ svg a path{
     fill:#55ec20
 }
 
-footer {
-    background-color: #201E1E;
-    position:absolute;
-    bottom:0;
-    padding: 20px;
-    width: 100%;
-}
+
 
 .container {
     display: flex;
@@ -109,17 +101,24 @@ input {
     font-weight: 300;
     line-height: 19px;
     letter-spacing: 0em;
-    text-align: center;
-    color: #fff
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #eBEBEB;
+    width: 305px;
+    height: 36px;
+    border-radius: 8px;
 }
 
-input #datePicker {
-    
+
+.date-picker-container i {
+    color: #55ec20;
 }
+
+
 
 h2 {
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 300;
     line-height: 19px;
     letter-spacing: 0em;
@@ -140,6 +139,9 @@ h2 {
     display: flex;
     justify-content: space-between; /* Aligns children with space in between */
     border-radius: 10px;
+    width: 305px;
+    height: 36px;
+    border-radius: 8px;
     
 }
 
@@ -148,15 +150,13 @@ h2 {
 
 p {
     margin: 10px 20px;
-    
-
 }
+
 
 footer {
     background-color: #201E1E;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    position:fixed;
+    bottom:0;
     padding: 20px;
     width: 100%;
 }
