@@ -64,7 +64,7 @@ function getPriceColor(price) {
     } else if (price <= 0.7) {
         return "#FF4D00";
     } else {
-        return "#FF0000"; // Additional color for prices over 0.7
+        return "#FF0000"; 
     }
 }
 
