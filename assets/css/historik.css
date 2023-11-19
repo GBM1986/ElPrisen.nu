@@ -169,10 +169,3 @@ footer p{
     text-align: center;
     color: #EBEBEB;
 }
-
-  @media only screen and (max-width: 400px) {
-    .nav-bar a {
-        font-size: 3vw;
-    }
-  }
-    

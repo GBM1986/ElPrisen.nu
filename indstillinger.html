@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/indstillinger.css">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="./serviceworker.js"></script>
+    <script src="assets/js/indstillinger.js" defer></script>
+    <title>Indstillinger</title>
+</head>
+<body>
+    <header>
+        <div class="image-container">
+            <img src="assets/appIcons/mainIcon.svg" alt="el">
+        </div>
+        
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="oversigt.html">OVERSIGT</a></li>
+                <li><a href="ligenu.html">LIGE NU</a></li>
+                <li><a href="historik.html">HISTORIK</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Indstillinger</h1>
+
+    
+    <h3 class="toggle-1-text">PRISER INKL. MOMS</h3>
+      <label class="toggle-1">
+         <input class="toggle-input" type="checkbox" />
+         <span class="toggle-label" data-off="" data-on=""></span>
+         <span class="toggle-handle"></span>
+      </label>
+    
+
+      <h3 class="toggle-2-text">LAVESTE PRIS ALARM</h3> 
+      <label class="toggle-2">
+         <input class="toggle-input" type="checkbox" />
+         <span class="toggle-label" data-off="" data-on=""></span>
+         <span class="toggle-handle"></span>
+      </label>
+    
+
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">VÆLG REGION</button>
+        <div id="myDropdown" class="dropdown-content">
+            <i class="fa-solid fa-chevron-down"></i>
+            <a href="#" id="region-ost" onclick="fetchData('https://www.elprisenligenu.dk/api/v1/prices/2023/11-16_DK2.json', 'REGION ØST')">REGION ØST</a>
+            <a href="#" id="region-vest" onclick="fetchData('https://www.elprisenligenu.dk/api/v1/prices/2023/11-16_DK1.json', 'REGION VEST')">REGION VEST</a>
+        </div>
+    </div>s
+
+    <footer>
+        <p>Priserne er <span style="color: #55ec20;">ex. moms</span> og afgifter
+            Du vises lige nu priserne for <span style="color: #55ec20;">Øst Danmark</span></p>
+    </footer>
+</body>
+</html>
